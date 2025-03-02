@@ -1,0 +1,101 @@
+1-
+  1.1- 
+    Sıralı Erişimli Dosyalar:
+      Dosyalar tarama yöntemiyle okunur.İstenilen yere gelene kadar bütün dosya okunur.İstenilen yere geldiğinde işlem yapılır.
+    Doğrudan Erişimli Dosyalar:
+      Sıralı erişimli dosyalarda işlem yapmak çok uzun olduğu için geliştirilmiştir.Sırayla istenilen yere gelene kadar okumak yerine istenilen dosyayı direkt olarak bulur ve işlem yapar.
+
+2-
+  2.1-Benzer Yönleri:
+      Veri Depolama: Her iki sistem de verilerin depolanmasını sağlar. Geleneksel dosyalama sisteminde veriler dosyalar şeklinde VTYS'te ise tablolarda tutulur.
+      Verilere Erişim: Her ikisi de kullanıcıların verilere erişmesini ve düzenlemesini sağlar.
+  2.2-Farklı Yönleri:
+      Veri Güvenliği:
+        GDS: Güvenlik özellikleri genellikle yoktur.
+        VTYS: Güçlü güvenlik önlemleri vardır.Kullanıcı yetkileri ve şifreleme gibi özellikler vardır.
+      Erişim:
+        GDS: Aynı anda birden fazla kişi veriye erişemez.
+        VTYS: Birçok kullanıcı aynı anda veriye erişebilir.
+      Veri Yapısı:
+        GDS: Veriler dosya olarak saklanır ve ilişkiler manuel yönetilir.
+        VTYS: Veriler tablolarda düzenlenir ve aralarındaki ilişkiler otomatik olarak yönetilir.
+      Yönetim:
+        GDS: Küçük ve basit veri yönetimi için uygundur.
+        VTYS: Daha büyük ve karmaşık veri yönetimi için daha güçlü ve güvenli bir çözümdür.
+
+3-
+  Veri Yönetimi Kolaylığı:
+    VTYS verilerin düzenli bir şekilde saklanmasını sağlar ve sorgulama işlemleri kolaydır. GDS’de ise veriler dağınık olabilir ve sorgulama zordur.
+  Veri Güvenliği:
+    VTYS güçlü güvenlik önlemleri vardır. GDS’de ise güvenlik özellikleri genellikle yoktur.
+  Çok Kullanıcı Desteği:
+    VTYS birden fazla kullanıcının aynı anda veriye erişebilmesini sağlar. GDS’de çoklu kullanıcı erişimi genellikle yoktur(varsa da sorun çıkabilir).
+  Yedekleme ve Kurtarma
+    VTYS’lerde yedekleme ve kurtarma vardır(otomatik). GDS’de ise yedekleme genellikle maunel yapılır.
+  Özetle:
+    VTYS daha güvenilir daha karmaşık ve büyük dosyalarda sorunsuz bir şekilde çalışabilen GDS'ye göre çok daha iyi bir sistemdir.
+
+4-
+  4.1-Görevleri:
+    Veri Depolama:
+      Veritabanı verileri düzenli bir şekilde depolar. Veriler tablo halinde saklanır.
+    Veri Güvenliği:
+      Veritabanı verilerin güvenliğini sağlar.
+    Yedekleme ve Kurtarma:
+      Veritabanları veri kaybını önlemek için yedekleme sağlar.,
+    Verilere Eşzamanlı Erişim:
+      Veritabanı aynı anda birden fazla kullanıcının veriye erişmesini sağlar.
+    Veri Erişimi 
+      Veritabanı kullanıcıların veriye hızlı bir şekilde erişmesini sağlar. SQL gibi sorgulama dilleriyle kullanıcılar verileri sorgulayabilir.
+    Sorgulama:
+      SQL gibi sorgulama dilleriyle kullanıcılar verileri sorgulayabilir.
+  4.2-Alanları:
+      Eğitim,sağlık,e-ticaret,sosyal medya gibi hayatın hemen hemen heryerinde VTYS vardır.
+
+  5-
+    Tablo: Tablo satır ve sütunlardan oluşan düzenli bir yapıdır.
+    Sütun: Sütun tablo içinde tutulan herbir veri türüne verilen isimdir.
+    Satır: Satır tablo içerisindeki sütuna ait veri grubudur.
+
+  6-
+    Primary (Birincil) Anahtar: Tabloda tutulan verilerden benzersiz yani aynı değeri iki kere alamayan sütun primary (birincil) anahtar olarak belirlenir.
+    Foreign (Yabancı) Anahtar:  Bir tablodaki bir sütunun başka bir tablodaki primary key sütununa işaret etmesidir. Foreign key iki tablo arasındaki ilişkiyi tanımlar.
+    Farklılıkları:
+      Benzersizlik:
+        Primary Key: Her değer benzersiz olmalıdır.
+        Foreign Key: Benzersiz olma zorunluluğu yoktur.
+      Null Değerler:
+        Primary Key: Null değer alamaz.
+        Foreign Key: Null değer alabilir.
+      Amaç:
+        Primary Key: Tablodaki her kaydı benzersiz bir şekilde tanımlar.
+        Foreign Key: İki tablo arasında ilişki kurar.
+
+  7-
+    1-Veritabanı Yöneticisi(DBA-Database Administrator)
+    2-Uygulama Programcısı
+    3-Sorgu Dili Kullanıcıları
+    4-Son Kullanıcılar
+
+  9-
+
+                                    1                                                                                                                                                                2
+    -------------------------------------------------------------------------                                                              ------------------------------------------------------------------------------------------------------------------
+    Veritabanı (Database):                                                                                                                 Veritabanı Yönetim Sistemi (VTYS):
+    Verilerin depolandığı düzenli şekilde oluşturulmuş yapıdır.                                                                            Veritabanlarının yönetilmesini sağlayan yazılım sistemidir.
+    Verilerin saklanması ve düzenlenmesi.                                                                                                  Veritabanlarının oluşturulması, yönetilmesi ve sorgulanması.
+    Veritabanı yalnızca veriyi saklar verilerin nasıl yönetileceğini içermez.                                                              VTYS verileri yönetmek, sorgulamak, güncellemek, yedeklemek ve güvenliğini sağlamak gibi işlevleri yerine getirir.
+
+  10-
+    Bire Bir İlişkiler:
+      İlişki kurulan tablolardaki kayıtların aynısından ikincisi olmayacaksa kurulan ilişkidir.İlişki kurulan tablodaki alanlardanbirisindeki primary key alanı diğer tabloda sadece bir kayıta karşılık geliyorsa oluşturulacak ilişki bire bir olur.
+    Bire Çok İlişkiler:
+      İlişki kurulan tablolardaki alanlardan birisindeki primary key alanı diğer tabloda birden fazla kayıta karşılık geliyorsa oluşturulacak ilişki bire çok ilişkidir.
+    Çoğa Çok İlişkiler:
+       İlişki kurulan tablolardan birindekibirçok kaydın değeri diğer tabloda birdeb fazla kayda karşılık geliyorsa oluşturulacak ilişki çoğa çok olur.
+
+  11-
+      Öğrenci bilgi sistemi için kullanılacak veritabanını oluşturacak tablolar:
+      Öğrenci: Öğrenci No , Ad , Soyad vs.
+      Bölümler: Bölüm İD , Bölüm Adı vs.
+      Dersler: Ders Adı , Ders İD  vs.
